@@ -30,7 +30,7 @@ echo "Installing dependencies into $LAYER_FOLDER/ ..."
 rm -rf "$LAYER_FOLDER" "$LAYER_ZIP"
 mkdir -p "$LAYER_FOLDER"
 
-pip install -r "$REQUIREMENTS_FILE" -t "$LAYER_FOLDER"
+pip3 install -r "$REQUIREMENTS_FILE" -t "$LAYER_FOLDER"
 
 echo "Creating $LAYER_ZIP ..."
 zip -r "$LAYER_ZIP" "$LAYER_FOLDER" > /dev/null
